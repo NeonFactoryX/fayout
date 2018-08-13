@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+body {
+    background-color: #777777;
+}
+li {
+    display: inline-block;
+}
+
+.topmenu a {
+    min-width: 80px;
+    min-height: 20px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #434343;
+    color: grey;
+    border-radius: 3px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.submenu li a{
+    border-radius: 0px;
+}
+
+.topmenu li:last-child a {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.topmenu > li {
+      position: relative;
+}
+
+.submenu {
+    transition: 0.5s opacity;
+    position: absolute;
+    opacity: 0;
+
+}
+
+.submenu li {
+    box-shadow: 0px 5px 10px #4a4a4a;
+    width: 119px;
+}
+
+.topmenu > li:hover .submenu {
+    display: block;
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-in {
+    padding: 3px;
+    background-color: #666666;
+}
+
+.right {
+    float: right;
+    margin-left: 3px;
+}
+
+.hover-yellow {
+    transition: 0.5s background-color;
+}
+
+.hover-yellow:hover {
+    background-color: #fde910;    
+}
+
+.open-menu {
+    width: 35px;
+    height: 30px;
+    background-color: #646464;
+    float: right;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-top: -5px;
+    margin-right: -5px;
+    transition: 0.5s all;
+}
+
+
+.open-menu div {
+    margin-left: 10px;
+    width: 15px;
+    height: 3px;
+    background-color: grey;
+    margin-top: 2px;
+    transition: 0.5s all;
+}
+
+.open-menu div:first-child{
+    margin-top: 7.5px;
+}
+
+.topmenu > li:hover .open-menu div {
+    background-color: #91b3f2;
+}
+
+.topmenu > li:hover .open-menu {
+    background-color: #6495ed;
+    transform: rotateZ(-90deg);
+}
+
+/*end of panel, the beginning of main content*/
+
+/* Page:Main */
+
+/* :) */
+
+.welcome {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #454545;
+    text-align: center;
+}
+
+.welcome-underline {
+    margin: 0 auto;
+    margin-top: -40px;
+    background: #454545;
+    width: 20%;
+    height: 2px;
+}
+
+.center {
+    margin-top: 20px;
+}
+
+.center p {
+    color: #454545;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #999999;
+    width: 1000px;
+    padding: 10px;
+    font-size: 21px;
+    transition: 0.3s all;
+}
+
+.center p:hover {
+    border-radius: 30px;
+    background-color: #888888;
+    cursor: default;
+}
+
+.center a {
+    color: #4682B4;
+}
+
+img[src="Неон.jpg"]{
+    transition: 0.3s all;
+    margin-right: 0px;
+    width: 100px;
+    float: right;
+    border-radius: 20px;
+    border: 3px solid grey;
+    opacity: 0.5;
+}
+
+.center p:hover img[src="Неон.jpg"]{
+    opacity: 1
+}
+
+img[src="Неон.jpg"]:hover {
+    border-radius: 50px;
+}
+
+.Loopy {
+    height: 105px;
+}
+
+.bottom {
+    color: #454545;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    min-height: 10%;
+    position: fixed;
+    background-color: #666666;
+    bottom: 0px;
+    left: 0;
+    box-shadow: 0 0 30px #666666;
+
+}
+
+.bottom table {
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.bottom table td {
+    padding-left: 20px;
+}
+
+.bottom table a {
+    color: #4F8A9E;
+    text-decoration: none;
+}
